@@ -1,6 +1,6 @@
-var express = require("express");
-var router = express.Router();
-var user = require("../controller/user");
+const express = require("express");
+const router = express.Router();
+const user = require("../controller/user");
 
 router.get("/", function(req, res, next) {
   res.send("respond with a resource");

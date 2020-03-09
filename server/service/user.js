@@ -1,5 +1,5 @@
-var mongoose = require("mongoose");
-var user = mongoose.model("User");
+const mongoose = require("mongoose");
+const user = mongoose.model("User");
 
 /**
  * Function to execute the create query to create the users.

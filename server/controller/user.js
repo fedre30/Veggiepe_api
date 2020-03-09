@@ -1,10 +1,10 @@
-var userService = require("../service/user");
+const userService = require("../service/user");
 
 /**
  * Function to create the user in user collection.
  */
 exports.create = function(req, res, next) {
-  var body = new User(req.body);
+  const body = new User(req.body);
   if (!body.username) {
     res.status(400).send("User name is missing");
     return;
@@ -22,8 +22,8 @@ exports.create = function(req, res, next) {
  * Function to find user from user collection.
  */
 exports.find = function(req, res) {
-  var params = req.params || {};
-  var query = {
+  const params = req.params || {};
+  const query = {
     username: params.username
   };
   if (!query) {
@@ -49,13 +49,13 @@ exports.find = function(req, res) {
  * Function to update the user data  by their ID.
  */
 exports.updateById = function(req, res) {
-  var body = req.body;
+  const body = req.body;
 
   if (!body.id) {
     res.status(400).send("Id is missing");
     return;
   }
-  var updateData = body.data || {};
+  const updateData = body.data || {};
   userService.updateUserById(body.id, updateData, (err, response) => {
     if (response) {
       res.status(200).send(response);
@@ -69,10 +69,10 @@ exports.updateById = function(req, res) {
  * Function to uodate the user data by filter condition.
  */
 exports.update = function(req, res) {
-  var body = req.body;
-  var query = body.query;
-  var data = body.data;
-  var options = body.options;
+  const body = req.body;
+  const query = body.query;
+  const data = body.data;
+  const options = body.options;
   if (!query) {
     res.status(400).send("Bad request");
     return;
@@ -91,8 +91,8 @@ exports.update = function(req, res) {
  * Function to delete the user from collection.
  */
 exports.delete = function(req, res) {
-  var body = req.body || {};
-  var query = body.query;
+  const body = req.body || {};
+  const query = body.query;
   if (!query) {
     res.status(400).send("Bad Request");
     return;
