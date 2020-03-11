@@ -1,8 +1,8 @@
-const express = require("express");
+impoer express from "express";
 const router = express.Router();
-const user = require("../controller/user");
+impoer user from "../controller/user";
 
-router.get("/", function(req, res, next) {
+router.get("/", (req, res, next) => {
   res.send("respond with a resource");
 });
 

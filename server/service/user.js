@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 const user = mongoose.model("User");
 
 /**
@@ -6,7 +6,7 @@ const user = mongoose.model("User");
  * @param {*} data user data
  * @param {*} callback callback function.
  */
-exports.createUser = function(data, callback) {
+exports.createUser = (data, callback) => {
   user.create(data).then(
     response => {
       callback(null, response);
@@ -22,7 +22,7 @@ exports.createUser = function(data, callback) {
  * @param {*} query condition or expression to find the user from collection.
  * @param {*} callback callback function
  */
-exports.findUser = function(query, callback) {
+exports.findUser = (query, callback) => {
   user.findOne(query, callback);
 };
 
@@ -31,7 +31,7 @@ exports.findUser = function(query, callback) {
  * @param {*} id user id
  * @param {*} data user data which we need to update.
  */
-exports.updateUserById = function(id, data, callback) {
+exports.updateUserById = (id, data, callback) => {
   user.findByIdAndUpdate(
     {
       _id: id
@@ -49,7 +49,7 @@ exports.updateUserById = function(id, data, callback) {
  * @param {*} data data which we need to update.
  * @param {*} options
  */
-exports.updateUser = function(query, data, options, callback) {
+exports.updateUser = (query, data, options, callback) => {
   user.findOneAndUpdate(query, data, options, (err, response) => {
     callback(err, response);
   });

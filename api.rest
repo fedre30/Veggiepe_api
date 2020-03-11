@@ -1,0 +1,305 @@
+GET http://localhost:3000/api/
+
+###
+
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+  "username" : "veggietest",
+  "password" : "veggieyeah"
+}
+
+
+###
+
+POST http://localhost:3000/api/recipes
+Content-Type: application/json
+ {
+
+      "label" : "White-Bean Dip with Veggie Chips",
+      "image" : "https://www.edamam.com/web-img/e70/e707b531e0701efab68c0a079d571557.jpg",
+      "source" : "Martha Stewart",
+      "url" : "https://www.marthastewart.com/1154518/white-bean-dip-veggie-chips",
+      "healthLabels" : [ "Sugar-Conscious", "Vegan", "Vegetarian", "Peanut-Free", "Tree-Nut-Free", "Alcohol-Free" ],
+      "cautions" : [ "Sulfites" ],
+      "ingrediens" : [ "1 can (15 ounces) cannellini beans, rinsed and drained", "2 to 3 tablespoons fresh lemon juice", "2 tablespoons olive oil", "1 small garlic clove, chopped", "1 teaspoon fresh rosemary, finely chopped, plus sprigs for garnish", "1/4 teaspoon red-pepper flakes, plus more for garnish", "Coarse salt and ground pepper", "Store-bought veggie chips, for serving" ],
+      "calories" : 738.1952265744686,
+      
+      "digest" : [ {
+        "label" : "Fat",
+        "tag" : "FAT",
+        "schemaOrgTag" : "fatContent",
+        "total" : 28.376326656361876,
+        "hasRDI" : true,
+        "daily" : 43.65588716363366,
+        "unit" : "g",
+        "sub" : [ {
+          "label" : "Saturated",
+          "tag" : "FASAT",
+          "schemaOrgTag" : "saturatedFatContent",
+          "total" : 4.0877882849105,
+          "hasRDI" : true,
+          "daily" : 20.438941424552503,
+          "unit" : "g"
+        }, {
+          "label" : "Trans",
+          "tag" : "FATRN",
+          "schemaOrgTag" : "transFatContent",
+          "total" : 0.0,
+          "hasRDI" : false,
+          "daily" : 0.0,
+          "unit" : "g"
+        }, {
+          "label" : "Monounsaturated",
+          "tag" : "FAMS",
+          "schemaOrgTag" : null,
+          "total" : 19.82323269660272,
+          "hasRDI" : false,
+          "daily" : 0.0,
+          "unit" : "g"
+        }, {
+          "label" : "Polyunsaturated",
+          "tag" : "FAPU",
+          "schemaOrgTag" : null,
+          "total" : 3.4046239028979377,
+          "hasRDI" : false,
+          "daily" : 0.0,
+          "unit" : "g"
+        } ]
+      }, {
+        "label" : "Carbs",
+        "tag" : "CHOCDF",
+        "schemaOrgTag" : "carbohydrateContent",
+        "total" : 94.24942556422968,
+        "hasRDI" : true,
+        "daily" : 31.41647518807656,
+        "unit" : "g",
+        "sub" : [ {
+          "label" : "Carbs (net)",
+          "tag" : "CHOCDF.net",
+          "schemaOrgTag" : null,
+          "total" : 73.31399384345156,
+          "hasRDI" : false,
+          "daily" : 0.0,
+          "unit" : "g"
+        }, {
+          "label" : "Fiber",
+          "tag" : "FIBTG",
+          "schemaOrgTag" : "fiberContent",
+          "total" : 20.935431720778123,
+          "hasRDI" : true,
+          "daily" : 83.74172688311249,
+          "unit" : "g"
+        }, {
+          "label" : "Sugars",
+          "tag" : "SUGAR",
+          "schemaOrgTag" : "sugarContent",
+          "total" : 2.1471025185975,
+          "hasRDI" : false,
+          "daily" : 0.0,
+          "unit" : "g"
+        }, {
+          "label" : "Sugars, added",
+          "tag" : "SUGAR.added",
+          "schemaOrgTag" : null,
+          "total" : 0.0,
+          "hasRDI" : false,
+          "daily" : 0.0,
+          "unit" : "g"
+        } ]
+      }, {
+        "label" : "Protein",
+        "tag" : "PROCNT",
+        "schemaOrgTag" : "proteinContent",
+        "total" : 31.290805603495937,
+        "hasRDI" : true,
+        "daily" : 62.58161120699187,
+        "unit" : "g"
+      }, {
+        "label" : "Cholesterol",
+        "tag" : "CHOLE",
+        "schemaOrgTag" : "cholesterolContent",
+        "total" : 0.0,
+        "hasRDI" : false,
+        "daily" : 0.0,
+        "unit" : "mg"
+      }, {
+        "label" : "Sodium",
+        "tag" : "NA",
+        "schemaOrgTag" : "sodiumContent",
+        "total" : 1141.7207430275273,
+        "hasRDI" : true,
+        "daily" : 47.57169762614697,
+        "unit" : "mg"
+      }, {
+        "label" : "Calcium",
+        "tag" : "CA",
+        "schemaOrgTag" : null,
+        "total" : 324.06798653906924,
+        "hasRDI" : true,
+        "daily" : 32.406798653906925,
+        "unit" : "mg"
+      }, {
+        "label" : "Magnesium",
+        "tag" : "MG",
+        "schemaOrgTag" : null,
+        "total" : 222.07631889344168,
+        "hasRDI" : true,
+        "daily" : 52.87531402224802,
+        "unit" : "mg"
+      }, {
+        "label" : "Potassium",
+        "tag" : "K",
+        "schemaOrgTag" : null,
+        "total" : 1995.6920540791896,
+        "hasRDI" : true,
+        "daily" : 42.46153306551467,
+        "unit" : "mg"
+      }, {
+        "label" : "Iron",
+        "tag" : "FE",
+        "schemaOrgTag" : null,
+        "total" : 13.084327053155755,
+        "hasRDI" : true,
+        "daily" : 72.6907058508653,
+        "unit" : "mg"
+      }, {
+        "label" : "Zinc",
+        "tag" : "ZN",
+        "schemaOrgTag" : null,
+        "total" : 4.8266816479057315,
+        "hasRDI" : true,
+        "daily" : 43.87892407187029,
+        "unit" : "mg"
+      }, {
+        "label" : "Phosphorus",
+        "tag" : "P",
+        "schemaOrgTag" : null,
+        "total" : 395.5336867504375,
+        "hasRDI" : true,
+        "daily" : 56.50481239291964,
+        "unit" : "mg"
+      }, {
+        "label" : "Vitamin A",
+        "tag" : "VITA_RAE",
+        "schemaOrgTag" : null,
+        "total" : 0.39648920596875004,
+        "hasRDI" : true,
+        "daily" : 0.04405435621875,
+        "unit" : "µg"
+      }, {
+        "label" : "Vitamin C",
+        "tag" : "VITC",
+        "schemaOrgTag" : null,
+        "total" : 14.247000000000002,
+        "hasRDI" : true,
+        "daily" : 15.830000000000004,
+        "unit" : "mg"
+      }, {
+        "label" : "Thiamin (B1)",
+        "tag" : "THIA",
+        "schemaOrgTag" : null,
+        "total" : 0.422719089823875,
+        "hasRDI" : true,
+        "daily" : 35.226590818656256,
+        "unit" : "mg"
+      }, {
+        "label" : "Riboflavin (B2)",
+        "tag" : "RIBF",
+        "schemaOrgTag" : null,
+        "total" : 0.167708114716875,
+        "hasRDI" : true,
+        "daily" : 12.900624208990383,
+        "unit" : "mg"
+      }, {
+        "label" : "Niacin (B3)",
+        "tag" : "NIA",
+        "schemaOrgTag" : null,
+        "total" : 0.5449091266880938,
+        "hasRDI" : true,
+        "daily" : 3.405682041800586,
+        "unit" : "mg"
+      }, {
+        "label" : "Vitamin B6",
+        "tag" : "VITB6A",
+        "schemaOrgTag" : null,
+        "total" : 0.36709290770946873,
+        "hasRDI" : true,
+        "daily" : 28.23791597765144,
+        "unit" : "mg"
+      }, {
+        "label" : "Folate equivalent (total)",
+        "tag" : "FOLDFE",
+        "schemaOrgTag" : null,
+        "total" : 283.7249918206562,
+        "hasRDI" : true,
+        "daily" : 70.93124795516405,
+        "unit" : "µg"
+      }, {
+        "label" : "Folate (food)",
+        "tag" : "FOLFD",
+        "schemaOrgTag" : null,
+        "total" : 283.7249918206562,
+        "hasRDI" : false,
+        "daily" : 0.0,
+        "unit" : "µg"
+      }, {
+        "label" : "Folic acid",
+        "tag" : "FOLAC",
+        "schemaOrgTag" : null,
+        "total" : 0.0,
+        "hasRDI" : false,
+        "daily" : 0.0,
+        "unit" : "µg"
+      }, {
+        "label" : "Vitamin B12",
+        "tag" : "VITB12",
+        "schemaOrgTag" : null,
+        "total" : 0.0,
+        "hasRDI" : false,
+        "daily" : 0.0,
+        "unit" : "µg"
+      }, {
+        "label" : "Vitamin D",
+        "tag" : "VITD",
+        "schemaOrgTag" : null,
+        "total" : 0.0,
+        "hasRDI" : false,
+        "daily" : 0.0,
+        "unit" : "µg"
+      }, {
+        "label" : "Vitamin E",
+        "tag" : "TOCPHA",
+        "schemaOrgTag" : null,
+        "total" : 7.3034906671350015,
+        "hasRDI" : true,
+        "daily" : 48.68993778090001,
+        "unit" : "mg"
+      }, {
+        "label" : "Vitamin K",
+        "tag" : "VITK1",
+        "schemaOrgTag" : null,
+        "total" : 31.028191930378128,
+        "hasRDI" : true,
+        "daily" : 25.85682660864844,
+        "unit" : "µg"
+      }, {
+        "label" : "Sugar alcohols",
+        "tag" : "Sugar.alcohol",
+        "schemaOrgTag" : null,
+        "total" : 0.0,
+        "hasRDI" : false,
+        "daily" : 0.0,
+        "unit" : "g"
+      }, {
+        "label" : "Water",
+        "tag" : "WATER",
+        "schemaOrgTag" : null,
+        "total" : 331.91053182208145,
+        "hasRDI" : false,
+        "daily" : 0.0,
+        "unit" : "g"
+      } ]
+    },
+  },

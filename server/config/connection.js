@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const URL = process.env.URL || "mongodb://127.0.0.1:27017/veggiepe";
 
