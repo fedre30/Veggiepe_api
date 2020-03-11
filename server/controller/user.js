@@ -30,7 +30,7 @@ exports.find = (req, res) => {
     res.status(400).send("Bad Request");
     return;
   }
-  userService.findUser(query, function(error, response) {
+  userService.findUser(query, (error, response) => {
     if (error) {
       res.status(404).send(error);
       return;

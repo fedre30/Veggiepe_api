@@ -1,6 +1,6 @@
-impoer express from "express";
+import express from "express";
 const router = express.Router();
-impoer user from "../controller/user";
+import user from "../controller/user";
 
 router.get("/", (req, res, next) => {
   res.send("respond with a resource");
@@ -12,7 +12,7 @@ router.get("/", (req, res, next) => {
 router.post("/", user.create);
 
 /**
- * TO get the single user by their username eg.email
+ * TO get the single user by their username eg‡‡‡.email
  */
 router.get("/user/:username", user.find);
 
@@ -24,7 +24,7 @@ router.put("/updatebyid", user.updateById);
 /**
  * To update the user data by filter condition
  */
-router.put("/update", user.update);
+router.put("/update", user.update);‡‡
 
 /**
  * To delete the user by condition

@@ -1,4 +1,12 @@
-GET http://localhost:3000/api/
+
+
+
+GET http://localhost:3000/
+
+###
+
+
+GET http://localhost:3000/api/users/user/veggietest
 
 ###
 
@@ -6,8 +14,8 @@ POST http://localhost:3000/api/users
 Content-Type: application/json
 
 {
-  "username" : "veggietest",
-  "password" : "veggieyeah"
+  "username" : "veggietest2",
+  "password" : "veggieyeah2"
 }
 
 
@@ -15,17 +23,17 @@ Content-Type: application/json
 
 POST http://localhost:3000/api/recipes
 Content-Type: application/json
- {
 
-      "label" : "White-Bean Dip with Veggie Chips",
+
+{
+      "name" : "White-Bean Dip with Veggie Chips",
       "image" : "https://www.edamam.com/web-img/e70/e707b531e0701efab68c0a079d571557.jpg",
       "source" : "Martha Stewart",
       "url" : "https://www.marthastewart.com/1154518/white-bean-dip-veggie-chips",
       "healthLabels" : [ "Sugar-Conscious", "Vegan", "Vegetarian", "Peanut-Free", "Tree-Nut-Free", "Alcohol-Free" ],
       "cautions" : [ "Sulfites" ],
-      "ingrediens" : [ "1 can (15 ounces) cannellini beans, rinsed and drained", "2 to 3 tablespoons fresh lemon juice", "2 tablespoons olive oil", "1 small garlic clove, chopped", "1 teaspoon fresh rosemary, finely chopped, plus sprigs for garnish", "1/4 teaspoon red-pepper flakes, plus more for garnish", "Coarse salt and ground pepper", "Store-bought veggie chips, for serving" ],
+      "ingredients" : [ "1 can (15 ounces) cannellini beans, rinsed and drained", "2 to 3 tablespoons fresh lemon juice", "2 tablespoons olive oil", "1 small garlic clove, chopped", "1 teaspoon fresh rosemary, finely chopped, plus sprigs for garnish", "1/4 teaspoon red-pepper flakes, plus more for garnish", "Coarse salt and ground pepper", "Store-bought veggie chips, for serving" ],
       "calories" : 738.1952265744686,
-      
       "digest" : [ {
         "label" : "Fat",
         "tag" : "FAT",
@@ -301,5 +309,5 @@ Content-Type: application/json
         "daily" : 0.0,
         "unit" : "g"
       } ]
-    },
-  },
+    }
+  
